@@ -1,217 +1,161 @@
+<!--Comment-->
 <!DOCTYPE html>
 <html>
-<title>Matt Hoover Resume</title>
+<title>Errand Boys</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
-a:link {
-    color: #0000FF; 
-    background-color: transparent; 
-    text-decoration: none;}
-
-a:hover {
-    color: green;
-    background-color: transparent;
-    text-decoration: underline;}
+body {font-family:Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Times New Roman";
+    letter-spacing: 3px;
+}
 </style>
+<body>
 
-
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<body class="w3-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-orange w3-text-white w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://linuxise.engr.utk.edu/ie421/mhoover5/images/matthoover.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            
-          </div>
-        </div>
-        <div class="w3-container">
-          <h2>Matt Hoover</h2><hr style = "color:white; border-width:8px";>
-          <p><i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-white"></i>Industrial Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-white"></i>3040 Sandy Creek Dr</p>
-          <p><i class="fa fa-fw w3-margin-right w3-large w3-text-white"></i>Germantown,TN 38138</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white"></i>mhoover5@vols.utk.edu</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-white"></i>(901) 493-7268</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-white"></i>Skills</b></p>
-          <p>Mathematics and Statistics</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:90%">&nbsp;</div>
-          </div>
-          <p>Lean Manufacturing</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:70%">
-              <div class="w3-center w3-text-black">&nbsp;</div>
-            </div>
-          </div>
-          <p>Production Planning</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:60%">&nbsp;</div>
-          </div>
-          <p>Work Standardization</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-grey" style="width:50%">&nbsp;</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-white"></i>Softwares</b></p>
-          <p>Anylogic Simulation Software</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-grey" style="height:24px;width:75%"></div>
-          </div>
-          <p>SQL</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-grey" style="height:24px;width:55%"></div>
-          </div>
-          <p>HTML</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-grey" style="height:24px;width:45%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:3px;">
+    <a href="#home" class="w3-bar-item w3-button">Grocery Delivery Service</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button"> Store Locations and Service Area</a>
+      <a href="#newuser" class="w3-bar-item w3-button"> New User</a>
+      <a href="#payment" class="w3-bar-item w3-button">Order</a>
+      <a href="#review" class="w3-bar-item w3-button">Review</a>
+      <a href="#team" class="w3-bar-item w3-button">Our Team</a>
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bryce Corporation</b>&nbsp;- <a href="http://www.brycecorp.com/">www.brycecorp.com</a></h5>
-          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - December 2016</h6>
-          <h6 class="w3-opacity"><i>Quality and Process Engineering Co-op</i></h6>
-          <ul>
-          <li>Used JIT manufacturing principles in the development of a data analysis project with the scope of limiting waste from printing defects. </li>
-          <li>Team leader for a logistics project involving the relocation of over 300 storage containers</li>
-          <li>Assisted in redesigning the process in which off-line samples were stored and managed</li>
-          <li>Reviewed, revised, or created all Quality SOP’s and formatted them for storage in the document sharing software Compliant Pro. </li>
-          <li>Proposed a new design for the QC lab using Google Sketch-up 3D modeling software. </li>
-          <li>Project champion of an investigation into a receiving issue regarding the solvent tanks.</li>
-          <li>Spent two months as a Quality Control technician</li>
-          </ul> 
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Tennessee Math Tutorial Center</b>&nbsp;- <a href="https://www.math.utk.edu/MTC/">www.math.utk.edu/MTC</a></h5>
-          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Present</h6>
-          <h6 class="w3-opacity"><i>Math Tutor</i></h6>
-          <ul>
-          <li>Provides assistance to students enrolled in math courses up to Calculus III</li>
-          <li>Position requires strong teaching skills and the ability to relearn material</li>
-          </ul>
-          <hr>
-        </div>
-        
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>The University of Tennessee</b> - <a href="https://ise.utk.edu/">www.ise.utk.edu</a></h5>
-          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2013 - May 2018</h6>
-          <h6 class="w3-opacity"><i>Bachelors of Science in Industrial Engineering</i></h6>
-          <h6><b>GPA:</b> 3.19</h6>
-          
-          
-                   
-          
-
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Zhejiang University</b> - <a href=http://www.zju.edu.cn/english/>www.ise.utk.edu</a></h5>
-          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6> 
-           <h6 class="w3-opacity"><i>Supply Chain Engineering Study Abroad Program</i></h6>
-           <ul>
-           <li>Spent three weeks in China studying alongside Chinese engineering students.</li>
-           <li>Along with six Chinese students, gave a final presentation on facility location trade-offs </li>
-           <li>Toured several manufacturing sites including GM-Shanghai and Sany Construction</li>
-          </ul>
-          <hr>
-        </div>
-        
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Courses</h2>
-        <div class="w3-container">
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>IE 427: Lean Manufacturing</b></h5>
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>IE 406: Simulation of Systems Models</b></h5>
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>IE 422: Capstone Senior Design Project</b></h5>
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>IE 406: Design of Experiments utilizing ANOVA</b></h5>
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>IE 421: Information Systems</b></h5><br>
-
-          <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>Future Data</b></h5><br>
-
-          <div ng-app="myApp" ng-controller="customersCtrl">
-
-
-
-            <h1> Hello, Class! </h1>
-            <table>
-              <tr ng-repeat="x in names">
-                <!-- <td>{{ x.utid }}</td> -->
-                <td><h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>{{ x.utid }}</b></h5><br></td>
-                <td>
-                <h5 style="border: 8px groove grey; border-radius:4px; background-color: silver; "><b>{{ x.student_name }}</b></h5><br></td>
-              </tr>
-            </table>
-  
-      
-          <p>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-orange w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-  <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-  <a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="LOGO.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="LOGO.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="850">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Errand Boys</h1><br>
+      <h5 class="w3-center">Bringing Groceries to your doorstep since 2018</h5>
+      <p class="w3-large">Errand Boys is a small scale grocery delivery service based in Knoxville, TN. Our deliveries are based on orders placed online using this website. We service a small area that includes about five grocery stores around the University of Tennessee Campus. Once deliveries are placed online, one of our three employees will drive to the grocery store chosen by the customer, buy the items listed on the customer’s order then deliver the groceries to the customer’s desired address. Payment is completed upon delivery. This service aims to assist those who do not have the time during their day to go to the grocery store and also people who are elderly or disabled and unable to shop for themselves. Errand Boys is committed to speedy delivery, excellence in customer satisfaction, efficiency, and safety. </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Store Locations and Service Area</h1><br>
+      <h4>Food City - Western Avenue</h4>
+      <p class="w3-text-black">1950 Western Ave, Knoxville, TN 37921</p>
+      <p><a href="https://www.foodcity.com/stores/store-details/676/?utm_source=googlebusiness&utm_medium=businesslocal&utm_campaign=grocery">www.foodcity.com</a></p><br>
+    
+      <h4>Kroger - Chapman Hwy</h4>
+      <p class="w3-text-black">4409 Chapman Hwy, Knoxville, TN 37920</p>
+      <p><a href="https://www.kroger.com">www.kroger.com</a></p><br>
+    
+      <h4>Publix - University Commons</h4>
+      <p class="w3-text-black">2429 University Commons Way, Knoxville, TN 37919</p>
+      <p><a href="http://www.publix.com">www.publix.com</a></p><br>
+    
+      <h4>Kroger - Kingston Pike</h4>
+      <p class="w3-text-black">4918 Kingston Pike, Knoxville, TN 37919</p>
+      <p><a href="https://www.kroger.com">www.kroger.com</a></p><br>
+    
+      <h4>Walmart - University Commons</h4>
+      <p class="w3-text-black">2501 University Commons Way, Knoxville, TN 37919</p>
+      <p><a href="https://www.walmart.com">www.walmart.com</a></p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="MapKnoxEB.jpeg" style="width:80% height:80%"">
+    </div>
+  </div>
+
+  <hr>
+ 
+<div class="w3-row w3-padding-64" id="newuser">
+      <h1 class="w3-center">NEW USER PLEASE SEE BELOW</h1><br>
+<a href="newuser.html" target="_blank" class="w3-button">NEW USERS CLICK HERE</button></a>
+ 
+
+
+
+  <!-- Contact Section -->
+<div class="w3-row w3-padding-64" id="payment">
+  <h1 class="w3-center">Order</h1><br>
+<a href="updatedorderscreen.html" target="_blank" class="w3-button">CLICK HERE TO ORDER</button></a>
+</div>
+
+      <h4>Payment and Cost Information</h4>
+      <p class="w3-text-black">Payment is not required until your groceries are delivered completely to your satisfaction. The cost of this service is structured as follows: $15 for 30 Items or Less and an additional $2.50 for every 15 Items after that. Cash, Credit and Debit Cards, Mobile Payment Applications and Checks will be accepted as payment upon delivery. Orders will be delivered one to two hours after they are placed. If you need to cancel an order, please cancel it within 30 minutes of completing it online. If the order is not cancelled within 30 minutes of placement, then your order will be delivered on time with payment expected.  </p><br>
+    </form>
+  </div>
+
+   <div class="w3-row w3-padding-64" id="review">
+      <h3 class="margin">Review</h3>
+      <a href="review.html" target="_blank" class="w3-button">Click Here to Leave a Review</button></a>
+    </div>
+
+
+
+<div class="container-fluid bg-3 text center" id="team">
+  <h3 class="margin">About Our Team</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+      <p>Joseph Begley - CEO</p>
+      <img src="mugshot1-Palmer.jpg" class="img-responsive margin" style="width:10%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Skylar East - COO</p>
+      <img src="mugshot-Skylar.jpg" class="img-responsive margin" style="width:10%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Zebulun Eggers - CFO</p>
+      <img src="Mugshot-zeb.jpg" class="img-responsive margin" style="width:10%" alt="Image">
+    </div>
+  </div>
+</div>
 
 
 <script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-   $http.get("mysql/student")
+var app = angular.module('myapp', []);
+app.controller('r_controller', function($scope, $http) {
+   $http.get("mysql/customer")
    .then(function (response) {
       $scope.names = response.data;
       // console.log(response.data);
   });
 });
+
+app.controller('c_controller', function($scope, $http) {
+  $scope.save = function () {
+    $http.post("mysql/customer", {"idCustomer": $scope.idCustomer})
+    .then(function (response) {
+        // $scope.added = response.data;
+        console.log(response.data);
+    });
+  }    
+});
 </script>
+<!-- End page content -->
+</div>
+
+
+
 </body>
 </html>
